@@ -72,8 +72,8 @@ body {
 .conteudo {
     background-color: rgb(137, 165, 95);
     position: absolute;
-    left: 20%;
-    top: 10%;
+    left: 50%;
+    top: 50%;
     
 
    overflow: hidden;
@@ -87,7 +87,7 @@ body {
     border-image-slice: 15; /*o quanto a imagem-borda esta semdo fatiada ou puxada na tela*/
     border-image-repeat: repeat;
 
-    /* transform: translate(-20%,-30%); */
+    transform: translate(-20%,-30%);
 
 }
 
