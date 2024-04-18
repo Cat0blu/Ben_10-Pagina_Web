@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/*mobile first*/
+
+/*
+pesquise por: Typical Device Breakpoints
+ex:
+pequenas telas: até 600px
+celular: de 600px até 768px
+tablet: de 768px até 992px
+desktop: de 992px até 1200px
+tv, grandes telas: acima de 1200px
+*/
+
+
+@font-face {
+    font-family: 'Baboy';
+    src: url('../fontes/Baboy.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family:'Bing';
+    src: url('../fontes/Bing Bam Boum.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sketch';
+    src: url('../fontes/Sketch 3D.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Londrina-solid';
+    src: url('../fontes/LondrinaSolid-Regular.otf');
+}
+
+/*sobre fontes tipos de formato:
+-opentype(otf)
+-truetype(ttf)
+-embedded-opentype
+-truetype-aat(apple advance Typography)
+-svg
+*/
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family:'Londrina-solid', Arial, Helvetica, sans-serif;
+    
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    position: relative;
+    background-color: rgba(128, 0, 0, 0.493);
+    
+}
+
+.conteudo {
+    background-color: rgb(137, 165, 95);
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 900px;
+
+    border: 20px solid black ;
+    border-image-source: url('../img/borda00.png');
+
+    border-image-slice: 15; /*o quanto a imagem-borda esta semdo fatiada ou puxada na tela*/
+    border-image-repeat: repeat;
+
+}
+
+
+header > h1 {
+    text-align: center;
+    font-family: 'Bing', Arial, Helvetica, sans-serif;
+    
+}
+
+header ul {
+    padding: 10px;
+}
+
+header > menu > ul > li {
+    display: inline;
+    background-color: rgb(117, 182, 52);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+header > menu > ul > li:hover {
+    background-color: rgb(91, 134, 48);
+    border: 1px solid white;
+
+    transition: background-color .5s,  border .5s;
+    
+}
+
+header > menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+main > section {
+    margin: 10px 0px;
+    padding: 5px;
+    height: 250px;
+   
+}
+
+main > section > img {
+    width: 400px;
+    
+}
+
+main > section > p {
+    position: relative;
+    bottom: 200px;
+    left: 50px;
+    background-color: rgba(255, 255, 255, 0.673);
+    width: 300px;
+    text-indent: 20px;
+    line-height: 1.2em;
+    font-size: 1.1em;
+    border-radius: 10px;
+    
+}
+
+section#s1 > p {
+    position: relative;
+    bottom:  250px;
+}
+
+footer {
+    
+    position: relative;
+    top: 180px;
+}
+
+footer > p {
+    margin-left: 23px;
+}
+
+footer > p > a >img {
+    width: 30px;
+    border-radius: 50%;
+
+    position: relative;
+    left: 200px;
+
+}
+
+footer > p > a >img:hover {
+    transform: translate(-3px,-3px);
+    border: 1px solid white;
+    box-sizing: border-box;
+
+    transition: border .5s, transform .5s;
+
+}
+
+#github_text {
+    position: relative;
+    left: 355px;
+    bottom: 25px;
+}
+
