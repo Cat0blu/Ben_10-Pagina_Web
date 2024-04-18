@@ -87,7 +87,7 @@ body {
     border-image-slice: 15; /*o quanto a imagem-borda esta semdo fatiada ou puxada na tela*/
     border-image-repeat: repeat;
 
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%); */
 
 }
 
