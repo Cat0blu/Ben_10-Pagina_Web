@@ -47,6 +47,7 @@ tv, grandes telas: acima de 1200px
     padding: 0px;
     margin: 0px;
     font-family:'Londrina-solid', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
     
 }
 
