@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.conteudo {
+    position: relative;
+    top: 40%;
+    border: none;
+    
+}
+
+.conteudo p {
+    font-size: 1.2em;
+}
+
+menu {
+    display: none;
+}
+
+footer {
+    display: none;
+}
