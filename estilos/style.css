@@ -169,14 +169,11 @@ footer > p {
 }
 
 footer > p > a >img {
+    position: relative;
+    left: 40%;
     width: 30px;
     border-radius: 50%;
-
-    position: relative;
-    left: 183px;
-
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
-
 }
 
 footer > p > a >img:hover {
@@ -192,7 +189,7 @@ footer > p > a >img:hover {
 
 #github_text {
     position: relative;
-    left: 340px;
+    left: 73%;
     bottom: 25px;
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.336);
 }
