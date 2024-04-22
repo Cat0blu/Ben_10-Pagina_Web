@@ -5,3 +5,15 @@
 #container {
     height: 1000px;
 }
+
+.conteudo {
+    top: 40%;
+}
+
+footer > p > a >img {
+    left: 65%;
+}
+
+#github_text {
+    left: 80%;
+}
