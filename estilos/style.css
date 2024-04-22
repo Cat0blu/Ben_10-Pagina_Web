@@ -31,7 +31,12 @@ tv, grandes telas: acima de 1200px
 
 @font-face {
     font-family: 'Londrina-solid';
-    src: url('../fontes/LondrinaSolid-Regular.otf');
+    src: url('../fontes/LondrinaSolid-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family:'universal' ;
+    src: url('../fontes/Universal\ Serif.ttf') format('truetype');
 }
 
 /*sobre fontes tipos de formato:
@@ -100,8 +105,10 @@ header {
 
 header > h1 {
     text-align: center;
-    font-family: 'Bing', Arial, Helvetica, sans-serif;
+    font-family: 'universal', Arial, Helvetica, sans-serif;
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.436);
+
+    color: rgb(38, 100, 38);
     
 }
 
@@ -109,7 +116,7 @@ header ul {
     padding: 10px;
 }
 
-header > menu > ul > li {
+header > menu > ul > li{
     display: inline;
     background-color: rgb(117, 182, 52);
     padding: 5px;
@@ -117,9 +124,11 @@ header > menu > ul > li {
     
 }
 
-header > menu > ul > li:hover {
+header > menu > ul > li:hover{
     background-color: rgb(91, 134, 48);
     border: 1px solid white;
+    color: rgb(22, 0, 100);
+    cursor: pointer;
 
     transition: background-color .5s,  border .5s;
     
@@ -129,6 +138,10 @@ header > menu > ul > li > a {
     text-decoration: none;
     color: black;
     
+}
+
+header > menu > ul > li > a:hover{
+    color: darkgreen;
 }
 
 main > section {
@@ -141,6 +154,10 @@ main > section {
 main > section > img {
     width: 400px;
     
+}
+
+main > section > h2 {
+    color: rgb(17, 68, 17);
 }
 
 main > section > p {
@@ -177,6 +194,7 @@ footer {
 footer > p {
     margin-left: 23px;
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.336);
+    color: rgb(142, 185, 142);
     
 }
 
@@ -192,10 +210,12 @@ footer > p > a >img:hover {
     transform: translate(-3px,-3px);
     border: 1px solid white;
     box-sizing: border-box;
+    box-shadow: 4px 4px 10px black;
 
     transition: border .5s, transform .5s;
 
-    box-shadow: 4px 4px 10px black;
+   
+
 
 }
 
@@ -215,5 +235,7 @@ footer > p > a >img:hover {
     left: 73%;
     bottom: 25px;
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.336);
+
+    color: black;
 }
 
