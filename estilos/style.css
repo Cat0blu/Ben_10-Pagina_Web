@@ -90,6 +90,13 @@ body {
 
 }
 
+header {
+    background-image: url('../img/energia_ben10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 5px;
+}
 
 header > h1 {
     text-align: center;
@@ -157,9 +164,14 @@ section#s1 > p {
 }
 
 footer {
-    
+    background-image: url('../img/energia_ben10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
     position: relative;
-    top: 180px;
+    top: 100px;
+    height: 130px;
 }
 
 footer > p {
@@ -185,6 +197,17 @@ footer > p > a >img:hover {
 
     box-shadow: 4px 4px 10px black;
 
+}
+
+#proxima_page {
+    text-align: right;
+    font-size: 2em;
+
+}
+
+#caixa {
+    margin: auto;
+    margin-top: 40px;
 }
 
 #github_text {
