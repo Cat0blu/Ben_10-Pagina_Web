@@ -63,7 +63,7 @@ html, body {
 
 body {
     
-    background-color: rgba(128, 0, 0, 0.493);
+    background-color: rgba(37, 97, 35, 0.493);
     
 }
 
@@ -213,9 +213,6 @@ footer > p > a >img:hover {
     box-shadow: 4px 4px 10px black;
 
     transition: border .5s, transform .5s;
-
-   
-
 
 }
 
