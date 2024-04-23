@@ -8,6 +8,8 @@
 
 .conteudo {
     top: 40%;
+    
+   
 }
 
 header h1 {
@@ -28,7 +30,7 @@ header > menu > ul > li {
     width: 500px;
 
     position: relative;
-    left: 30%;
+    left: 20%;
 
     background-color: rgb(117, 182, 52);
     border: 1px solid rgba(255, 255, 255, 0.397);
@@ -78,6 +80,11 @@ main > section > p {
    text-align: justify;
 
    margin-left: 25%;
+}
+
+footer {
+    position: sticky;
+    bottom: -20px;
 }
 
 footer > p > a >img {
