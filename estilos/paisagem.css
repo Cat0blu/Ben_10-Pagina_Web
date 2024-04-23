@@ -10,6 +10,77 @@
     top: 40%;
 }
 
+header h1 {
+    position: relative;
+    right:5%;
+    color: rgb(172, 201, 171);
+}
+
+header > menu > ul {
+   
+}
+
+header > menu > ul > li {
+    margin-right: 50px;
+    
+    display: block;
+    text-align: center;
+    width: 500px;
+
+    position: relative;
+    left: 30%;
+
+    background-image: url('../img/energia_ben10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+   
+}
+
+header > menu > ul > li > a {
+    
+    font-size: 1.5em;
+    
+
+}
+
+main > section > h2 {
+    position: relative;
+    left: 40%;
+    top: 15%;
+
+    display: inline;
+
+    padding: 7.5px;
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.63);
+    
+}
+
+/* #h2_ {
+    left: 12%;
+    top: 8%;
+} */
+
+main > section > img {
+    display: block;
+    margin: auto;
+
+    width: 500px;
+
+    border-radius: 10px;
+
+}
+
+main > section > p {
+   width: 500px;
+   text-align: justify;
+
+   margin-left: 475px;
+}
+
 footer > p > a >img {
     left: 65%;
 }
