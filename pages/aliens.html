@@ -4,8 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aliens</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        #campo {
+            background-color: white;
+            border: 2px solid black;
+            width: 250px;
+            height: 500px;
+            margin: auto;
+                        
+        }
+
+        #omnitrix {
+            display: block;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 150px;
+        }
+
+        .aliens {
+            width: 200px;
+            height: 200px;
+            border-radius:50%;
+            margin: auto;
+            margin-top: 150px;
+        }
+
+        #alien0 {
+            display: none;
+          
+        }
+
+        #alien1 {
+            display: none;
+        }
+
+        #alien2 {
+            display: none;
+        }
+
+
+        #green_ball {
+            border-radius: 50%;
+            background-color: green;
+            height: 10px;
+            margin-left: 70px ;
+            
+            
+        }
+
+        #red_ball {
+            border-radius: 50%;
+            background-color: red;
+            height: 10px;
+            margin-left: 70px ;
+            
+        }
+
+
+
+    </style>
 </head>
 <body>
-    
+    <div id="campo">
+        <img src="../img/icon_omnitrix.png" alt="ativar" id="omnitrix">
+        <img src="../img/icone_besta.png" alt="" id="alien0" class="aliens">
+        <img src="../img/icone_diamante.png" alt="" id="alien1" class="aliens">
+        <img src="../img/icone_massacinsenta.png" alt="" id="alien2" class="aliens">
+        
+        <button id="red_ball" onclick="voltar_ao_normal()"></button>
+        <button onclick="proximo()" id="green_ball"></button>
+        
+
+    </div>
+
+    <script>
+        var clicou = 0
+        var normal = false
+        function proximo(){
+            if (clicou == 0){
+                window.document.getElementById('omnitrix').style.display = 'none'
+                window.document.getElementById('alien0').style.display = 'block'
+                clicou +=1
+                normal = false
+            }
+            if(clicou == 1){
+                window.document.getElementById('alien0').style.display = 'none'
+                window.document.getElementById('alien1').style.display = 'block'
+                clicou +=1
+                normal = false
+            }
+
+            else if(clicou == 2){
+                window.document.getElementById('alien1').style.display = 'none'
+                window.document.getElementById('alien2').style.display = 'block'
+                clicou +=1
+                normal = false
+
+            }
+
+            else 
+            {
+                window.document.getElementById('alien2').style.display = 'none'
+                window.document.getElementById('alien0').style.display = 'block'
+                clicou = 0
+                normal = false
+            }
+          
+        }
+
+        function voltar_ao_normal()
+        {
+            if(! normal)
+            {
+                window.document.getElementById('omnitrix').style.display = 'block'
+                window.document.getElementById('alien0').style.display = 'none'
+                window.document.getElementById('alien1').style.display = 'none'
+                window.document.getElementById('alien2').style.display = 'none'
+                normal = true
+                clicou =0
+            }
+        }
+    </script>
 </body>
 </html>
