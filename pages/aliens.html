@@ -7,30 +7,39 @@
     <style>
         body {
             background-color: black;
+            
         }
         #campo {
-            background-color: white;
+            background-image: url('../img/body_omnitrix.jpg');
+            background-size: cover ;
+            background-position: center top;
             border: 2px solid black;
             width: 250px;
             height: 500px;
             margin: auto;
+
+            border-radius: 5px;
                         
         }
 
         #omnitrix {
             display: block;
-            height: 200px;
+            height: 160px;
             border-radius: 50%;
             margin: auto;
-            margin-top: 150px;
+            margin-top: 175px;
+            margin-left: 33px;
+
         }
 
         .aliens {
-            width: 200px;
-            height: 200px;
+            width: 220px;
+            height: 220px;
             border-radius:50%;
             margin: auto;
-            margin-top: 150px;
+            position: relative;
+            top: 146px;
+            right: 5px;
         }
 
         #alien0 {
@@ -49,21 +58,37 @@
 
         #green_ball {
             border-radius: 50%;
-            background-color: green;
-            height: 15px;
-            width: 20px;
-            margin-left: 70px ;
+            background-color: #96C93E;
+            height: 26px;
+            width: 26px;
+            position: absolute;
+            top: 395px;
             
+            margin-left: 20px ;
             
+        }
+
+        #green_ball:hover {
+            background-color: #80b81f;
+            transform: translate(-1px,-3px);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.432);
         }
 
         #red_ball {
             border-radius: 50%;
             background-color: red;
-            width: 20px;
-            height: 15px;
+            width: 22px;
+            height: 17px;
+            position: relative;
+            bottom: 190px;
+            left: 39px;
             margin-left: 70px ;
             
+            
+        }
+
+        #red_ball:hover {
+            background-color: rgb(156, 6, 6);
         }
 
 
@@ -92,6 +117,7 @@
                 window.document.getElementById('alien0').style.display = 'block'
                 clicou +=1
                 normal = false
+                window.document.getElementById('red_ball').style.bottom = '72px'
             }
             if(clicou == 1){
                 window.document.getElementById('alien0').style.display = 'none'
@@ -122,6 +148,7 @@
         {
             if(! normal)
             {
+                window.document.getElementById('red_ball').style.bottom = '190px'
                 window.document.getElementById('omnitrix').style.display = 'block'
                 window.document.getElementById('alien0').style.display = 'none'
                 window.document.getElementById('alien1').style.display = 'none'
